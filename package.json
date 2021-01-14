@@ -25,6 +25,7 @@
   "homepage": "https://github.com/hay-espacio-en-el-taco/time-to-herd-mx#readme",
   "dependencies": {
     "axios": "^0.21.1",
-    "csvtojson": "^2.0.10"
+    "csvtojson": "^2.0.10",
+    "moment": "^2.29.1"
   }
 }
