@@ -1,0 +1,30 @@
+{
+  "name": "time-to-herd-mx",
+  "version": "0.1.0",
+  "description": "https://github.com/hay-espacio-en-el-taco/time-to-herd-mx",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "export $(grep -v '^#' .env | xargs) && node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hay-espacio-en-el-taco/time-to-herd-mx.git"
+  },
+  "keywords": [
+    "covid",
+    "twitter",
+    "bot"
+  ],
+  "author": "Christian Medinilla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hay-espacio-en-el-taco/time-to-herd-mx/issues"
+  },
+  "homepage": "https://github.com/hay-espacio-en-el-taco/time-to-herd-mx#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "csvtojson": "^2.0.10"
+  }
+}
