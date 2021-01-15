@@ -4,9 +4,11 @@
   "description": "https://github.com/hay-espacio-en-el-taco/time-to-herd-mx",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 0",
     "start": "node index.js",
-    "dev": "export $(grep -v '^#' .env | xargs) && node index.js"
+    "dev": "export $(grep -v '^#' .env | xargs) && node index.js",
+    "eslint": "eslint .",
+    "eslint:fix": "eslint . --fix"
   },
   "repository": {
     "type": "git",
@@ -29,5 +31,8 @@
     "moment": "^2.29.1",
     "moment-timezone": "^0.5.32",
     "twitter-api-client": "^1.2.4"
+  },
+  "devDependencies": {
+    "eslint": "^7.17.0"
   }
 }

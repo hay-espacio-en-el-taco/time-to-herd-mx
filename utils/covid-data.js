@@ -1,6 +1,6 @@
 const axios = require('axios');
-const csvtojson = require("csvtojson");
-const moment = require("moment");
+const csvtojson = require('csvtojson');
+const moment = require('moment');
 const tz = require('moment-timezone');
 
 // get population data from https://github.com/pgriggs/timetoherd.com/blob/master/src/shared/data-factory.js
@@ -26,7 +26,7 @@ const _getCovidData = async ()  => {
 
 const _convertToJson = async (csv) => {
   return await csvtojson().fromString(csv);
-}
+};
 
 const getDaysToHerd = async () => {
   const daysToHerd = await _getCovidData();
