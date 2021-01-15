@@ -21,6 +21,7 @@ const _getCovidData = async ()  => {
     return mxUpdateData[0];
   } catch (error) {
     console.error(error);
+    process.exit(1);
   }
 };
 
