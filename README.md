@@ -1,7 +1,7 @@
 # time-to-herd-mx
 Twitter bot who posts every day the days until herd immunity to Covid-19 is reached through vaccinations in Mexico
 
-![Last Tweet](https://github.com/hay-espacio-en-el-taco/time-to-herd-mx/workflows/Node.js%20CI/badge.svg)
+![Tweet](https://github.com/hay-espacio-en-el-taco/time-to-herd-mx/workflows/Tweet/badge.svg)
 
 Data from https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/vaccinations/vaccinations.csv
 
