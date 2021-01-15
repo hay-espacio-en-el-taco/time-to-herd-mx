@@ -9,7 +9,9 @@ const twitterClient = new TwitterClient({
 
 const tweet = async (data) => {
   try {
-    const status =  `Nos Faltan ${data.daysToHerd} día(s) para tener imnunidad en México (70% de la población vacunada)`;
+    const years = Math.trunc(data.daysToHerd / 365);
+    const yearsText = years > 0 ? `o aprox ${years} año(s) ` : '';
+    const status =  `Nos Faltan ${data.daysToHerd} día(s) ${yearsText}para tener imnunidad en México (70% de la población vacunada) #Covid_19mx #COVID19`;
     const result = await twitterClient.tweets.statusesUpdate({ status });
   
     return result;
