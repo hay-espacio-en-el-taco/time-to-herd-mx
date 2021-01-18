@@ -8,3 +8,20 @@ https://twitter.com/timetoherdmx
 Data from https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/vaccinations/vaccinations.csv
 
 Calculations from  https://timetoherd.com/
+
+## How data it's calculated
+
+Days = [(Population * 0.7) - (Vaccine Doses Delivered * 0.5)] / (Average Daily Vaccine Doses Given * 0.5)
+
+## Run in local
+
+- Copy .env-tamplate and rename it as .env
+- Fill with your Twitter API credentials
+- Run `npm run dev`
+
+## How to contribuite
+
+- Fork this repo
+- Add your code
+- run `nmp run eslint:fix``
+- Create your pull request
