@@ -23,5 +23,5 @@ Days = [(Population * 0.7) - (Vaccine Doses Delivered * 0.5)] / (Average Daily V
 
 - Fork this repo
 - Add your code
-- run `nmp run eslint:fix``
+- run `nmp run eslint:fix`
 - Create your pull request
