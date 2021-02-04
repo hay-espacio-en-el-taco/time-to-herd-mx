@@ -11,7 +11,7 @@ const _getCovidData = async ()  => {
     const response = await axios.get('https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/vaccinations/vaccinations.csv');
     const data = response.data;
     const json = await _convertToJson(data);
-    const yesterday = tz(moment().subtract(1, 'days'), 'America/Mexico_City').format('yyyy-MM-D');
+    const yesterday = tz(moment().subtract(1, 'days'), 'America/Mexico_City').format('yyyy-MM-DD');
     const mxUpdateData = json.filter((item) => item.iso_code === 'MEX' && item.date === yesterday);
 
     if (mxUpdateData.length === 0) {
