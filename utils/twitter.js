@@ -17,7 +17,7 @@ const tweet = async (data) => {
     return result;
   } catch (error) {
     console.error(error);
-    process.exit(1);
+    // process.exit(1);
   }
 };
 

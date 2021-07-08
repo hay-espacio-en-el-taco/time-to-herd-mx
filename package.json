@@ -4,7 +4,7 @@
   "description": "https://github.com/hay-espacio-en-el-taco/time-to-herd-mx",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0",
+    "test": "jest test/*.test.js",
     "start": "node index.js",
     "dev": "export $(grep -v '^#' .env | xargs) && node index.js",
     "eslint": "eslint .",
@@ -33,6 +33,11 @@
     "twitter-api-client": "^1.2.4"
   },
   "devDependencies": {
-    "eslint": "^7.17.0"
+    "assert": "^2.0.0",
+    "eslint": "^7.17.0",
+    "jest": "^26.6.3",
+    "mocha": "^8.2.1",
+    "request": "^2.88.2",
+    "sinon": "^9.2.3"
   }
 }
